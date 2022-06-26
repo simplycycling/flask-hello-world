@@ -17,3 +17,12 @@ resource "aws_internet_gateway" "flask-igw" {
     Name = "flask-vpc"
   }
 }
+
+# Routing table for the VPC
+resource "aws_route_table" "flask-public-route" {
+  vpc_id = aws_vpc.flask-vpc.id
+
+  tags = {
+    Name = "flask-vpc"
+  }
+}
