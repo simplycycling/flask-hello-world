@@ -10,3 +10,11 @@ resource "aws_ecs_cluster" "flask-cluster" {
     Name = "hw-flask"
   }
 }
+
+# create container task TODO figure out how to do that
+/*
+Not currently sure where to go with this - I need to get a little farther into
+the buildkite workflow before understanding where the best place to publish the
+image would be
+*/
+
