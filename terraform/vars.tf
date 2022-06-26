@@ -10,3 +10,7 @@ variable "subnet_cidrs" {
     "10.0.2.0/24"
   ]
 }
+
+variable "flask_app_port" {
+  default = 5000
+}
