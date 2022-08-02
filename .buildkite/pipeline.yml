@@ -2,5 +2,6 @@ steps:
   - label: "create virtualenv"
     command: 
       - python3 -m venv venv
-      - ls -l
+      - source ./venv/bin/activate
+
 
