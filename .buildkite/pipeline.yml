@@ -1,13 +1,6 @@
 steps:
   - label: "create virtualenv"
-    command: python3 -m venv venv
-
-  - label: "Activate venv"
-    command: source venv/bin/activate
-
-  - label: "Install requirements"
-    command: pip install -r requirements.txt
-
-  - label: "Run unit tests"
-    command: python3 test_hello.py
+    command: 
+      - python3 -m venv venv
+      - ls -l
 
