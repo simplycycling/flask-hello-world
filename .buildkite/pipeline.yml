@@ -1,4 +1,4 @@
 steps:
-  - label: "Example test"
-    command: echo "Hello!"
+  - label: "Run unit tests"
+    command: python3 test_hello.py
 
