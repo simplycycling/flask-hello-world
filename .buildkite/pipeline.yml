@@ -1,10 +1,13 @@
 steps:
-  - label: "create virtualenv"
+  - label: "create virtualenv and run test"
     command: 
       - python3 -m venv venv
       - source ./venv/bin/activate
       - pip install -r requirements.txt
       - python ./test_hello.py
+
+  - label: "See what's going on"
+    command: ls -l
 
   - label: "Build container"
     command: docker build . -t flasky
