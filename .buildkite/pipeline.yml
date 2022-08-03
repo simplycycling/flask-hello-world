@@ -6,5 +6,6 @@ steps:
       - pip install -r requirements.txt
       - python ./test_hello.py
 
-
+  - label: "Build container"
+    command: docker build . -t flasky
 
